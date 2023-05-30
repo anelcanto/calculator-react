@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Addition() {
+export default function Multiplication() {
     const [numbers, setNumbers] = useState({
         number1: 0,
         number2: 0
@@ -26,12 +26,12 @@ export default function Addition() {
         });
     };
     
-    let add =  parseFloat(numbers.number1) + parseFloat(numbers.number2);
+    let mult =  parseFloat(numbers.number1) * parseFloat(numbers.number2);
     
     return (
         <div>
-            <input type="text" onChange={num1ChangeHanlder} value={numbers.number1} />  +&nbsp;  
-            <input type="text" onChange={num2ChangeHanlder} name ="2" value={numbers.number2} /> = {add}
+            <input type="text" onChange={num1ChangeHanlder} value={numbers.number1} />  *&nbsp;  
+            <input type="text" onChange={num2ChangeHanlder} name ="2" value={numbers.number2} /> = {mult}
 
         </div>
     

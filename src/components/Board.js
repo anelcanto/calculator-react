@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
 import Addition from './Addition';
 import Sustraction from './Sustraction';
-import React, { useState } from 'react';
+import Multiplication from './Multiplication';
+import Division from './Division';
+
 
 export default function Board() {
     const [hiddenNote, setHiddenNote] = useState("none");
@@ -22,6 +25,10 @@ export default function Board() {
         <>
             <Addition />
             <Sustraction />
+            <Multiplication />
+            <Division />
+
+
             <br/>
             <button className="button"  onClick={clickHandler}>Note</button>
             <p id="note" hidden>Note: This code snippet aims to demonstrate the use of React, and as a result, certain error handling aspects have been omitted, which would be essential on a production environment.</p>

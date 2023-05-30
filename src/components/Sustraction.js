@@ -25,12 +25,12 @@ export default function Sustraction() {
             number2: event.target.value === ""? 0 : event.target.value 
         });
     };
-    
+
     let sus =  parseFloat(numbers.number1) - parseFloat(numbers.number2);
     
     return (
         <div>
-            <input type="text" onChange={num1ChangeHanlder} name="1" value={numbers.number1} />  -  
+            <input type="text" onChange={num1ChangeHanlder} value={numbers.number1} />  - &nbsp; 
             <input type="text" onChange={num2ChangeHanlder} name ="2" value={numbers.number2} /> = {sus}
 
         </div>
