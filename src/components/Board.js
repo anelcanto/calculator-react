@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import Addition from './Addition';
-import Sustraction from './Sustraction';
-import Multiplication from './Multiplication';
-import Division from './Division';
+import Operation from './Operation';
 
 
 export default function Board() {
     const [hiddenNote, setHiddenNote] = useState("none");
     function clickHandler(event) {
         const note = document.getElementById("note");
-        console.log("note: ", note);
+        
         if(hiddenNote==="none"){
             setHiddenNote("block"); 
             note.style.display = "block";
@@ -17,16 +14,14 @@ export default function Board() {
             setHiddenNote("none");
             note.style.display = "none";
         }
-        console.log(hiddenNote);
+        
     }
     
     
     return (
         <>
-            <Addition />
-            <Sustraction />
-            <Multiplication />
-            <Division />
+            <Operation />
+
 
 
             <br/>

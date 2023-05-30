@@ -1,6 +1,7 @@
 import './App.css';
 import Board from './components/Board';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <br/>
       <Header/>
       <Board />
+      <Footer/>
     </div>
 
   );
